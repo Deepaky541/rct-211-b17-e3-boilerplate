@@ -1,0 +1,48 @@
+.btn{
+    cursor: pointer;
+}
+.white{
+color: black;
+background-color: white ;
+}
+.red {
+  background-color: red ;
+}
+
+.green {
+  background-color: green ;
+}
+.orange{
+ background-color: orange ;
+}
+.yellow{
+    background-color: yellow;
+}
+
+.outline {
+  border: 3px solid black;
+  background-color: transparent;
+}
+.solid{
+    border: 1px solid black;
+}
+.ghost{
+  border: none;
+  background-color:initial;
+}
+.sm{
+    font-size: small;
+    padding: 10px;
+}
+.md{
+    font-size: medium;
+    padding: 20px;
+}
+.lg{
+    font-size: large;
+    padding: 30px;
+}
+.xl{
+    font-size: x-large;
+    padding: 40px;
+}
