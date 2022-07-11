@@ -14,9 +14,7 @@ function App() {
     minValue: 5,
     maxValue: 15,
   });
-  const handlepage=()=>{
-
-  }
+ 
   return (
     <div className="App">
       {/* DO NOT CHANGE the 5 lines below   */}
@@ -35,7 +33,7 @@ function App() {
       <br />
       <br />
       <br />
-      <Pagination total={10} selected={4} onPageChange={handlepage} />
+      <Pagination total={10} selected={4}  />
     </div>
   );
 }

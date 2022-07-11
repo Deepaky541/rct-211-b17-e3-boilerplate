@@ -12,7 +12,7 @@ export const Pagination = ({ total, selected, onPageChange }) => {
       style={{ display: "flex", justifyContent: "center" }}
     >
       <button
-      disabled={page<=1}
+        disabled={page <= 1}
         onClick={() => {
           setpage(page - 1);
         }}
@@ -21,13 +21,13 @@ export const Pagination = ({ total, selected, onPageChange }) => {
       </button>
       {pages.map((el, index) => (
         <div style={{ margin: "20px" }} key={index}>
-          <PageCell sel={page} num={index} onHandleClick={handleClick} />
+          <PageCell sel={page} num={index} onPageChange={handleClick} />
         </div>
       ))}
       <button
-      disabled={page>=total}
+        disabled={page >= total}
         onClick={() => {
-          setpage(page+1 );
+          setpage(page + 1);
         }}
       >
         {">"}
