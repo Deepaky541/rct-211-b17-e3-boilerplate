@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 
-export const PageCell = ({ num, sel, onPageChange }) => {
+export const PageCell = ({ num, sel, onhandlepage }) => {
   const [selectedPage, setselectedPage] = useState(sel);
   useEffect(() => {
     setselectedPage(sel);
@@ -27,7 +27,7 @@ export const PageCell = ({ num, sel, onPageChange }) => {
     <div>
       <button
         onClick={() => {
-          onPageChange(num + 1);
+          onhandlepage(num + 1);
         }}
         style={{
           backgroundColor: "white",

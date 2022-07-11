@@ -3,9 +3,9 @@ import { PageCell } from "./PageCell";
 export const Pagination = ({ total, selected, onPageChange }) => {
   const [page, setpage] = useState(selected);
   const [pages] = useState(new Array(total).fill(1));
-  const handleClick=(data)=>{
+  onPageChange= (data) => {
     setpage(data);
-  }
+  };
   return (
     <div
       className="pageContainer"
@@ -21,7 +21,7 @@ export const Pagination = ({ total, selected, onPageChange }) => {
       </button>
       {pages.map((el, index) => (
         <div style={{ margin: "20px" }} key={index}>
-          <PageCell sel={page} num={index} onPageChange={handleClick} />
+          <PageCell sel={page} num={index} onhandlepage={onPageChange} />
         </div>
       ))}
       <button
