@@ -8,8 +8,6 @@ export const PageCell = ({num,sel,onHandleClick}) => {
      setselectedPage(sel);
     }, [sel])
     
-    
-    console.log("page is",selectedPage)
      if(num+1===selectedPage)
      {
        return (

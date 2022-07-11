@@ -1,6 +1,5 @@
 import { useState } from "react";
 export const useCounter = (init) => {
-  console.log(init);
   const [count, setValue] = useState(init.initialValue);
 
   const incCount = (num) => {
